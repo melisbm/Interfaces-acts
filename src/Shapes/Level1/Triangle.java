@@ -35,9 +35,8 @@ public class Triangle implements Shape{
     @Override
     public double getArea(){
 
-        double h = 2 * a / b;
-
-        return b * h / 2;
+        double s = (a + b + c) / 2;
+        return Math.sqrt(s * (s - a) * (s - b) * (s - c));
     }
 
 }
