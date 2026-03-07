@@ -1,4 +1,4 @@
-package Shapes.Level1;
+package Level1.Shapes;
 
 public class Rectangle implements Shape{
     double width;

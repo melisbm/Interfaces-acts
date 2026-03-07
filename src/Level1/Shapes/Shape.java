@@ -1,4 +1,4 @@
-package Shapes.Level1;
+package Level1.Shapes;
 
 public interface Shape {
     public double getArea();

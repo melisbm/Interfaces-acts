@@ -1,4 +1,4 @@
-package Shapes.Level1;
+package Level1.Shapes;
 import java.lang.Math;
 
 public class Circle implements Shape{
