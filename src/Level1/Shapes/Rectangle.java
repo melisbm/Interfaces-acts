@@ -1,6 +1,7 @@
 package Level1.Shapes;
+import Level1.Resizable.Resizable;
 
-public class Rectangle implements Shape{
+public class Rectangle implements Shape, Resizable {
     double width;
     double height;
 
@@ -12,5 +13,15 @@ public class Rectangle implements Shape{
     @Override
     public double getArea(){
         return width * height;
+    }
+
+    @Override
+    public void resizeWidth(int newWidth){
+        width = newWidth;
+    }
+
+    @Override
+    public void resizeHeight(int newHeight){
+        height = newHeight;
     }
 }
