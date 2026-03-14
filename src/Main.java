@@ -1,20 +1,24 @@
-import Level1.Shapes.*;
+
+import Level2.BankingSystem.*;
 
 public class Main {
     public static void main(String[] args){
 
-        Rectangle rectangle = new Rectangle(4, 5);
-        Shape circle = new Circle(4);
-        Shape triangle = new Triangle(4);
+        CurrentAccount curr = new CurrentAccount(123);
+        SavingsAccount save = new SavingsAccount(60);
 
-        System.out.println(rectangle.getArea());
-        System.out.println(circle.getArea());
-        System.out.println(triangle.getArea());
-
-
-        rectangle.resizeWidth(1);
-        System.out.println(rectangle.getArea());
-
+        curr.viewBalance();
+        save.viewBalance();
+        System.out.println("-------------");
+        curr.deposit(120);
+        curr.viewBalance();
+        System.out.println("-------------");
+        curr.withdraw(save, 58);
+        curr.viewBalance();
+        save.viewBalance();
+        System.out.println("-------------");
+        System.out.println(curr.calculateInterest(25));
+        System.out.println(save.calculateInterest(30));
 
     }
 }
