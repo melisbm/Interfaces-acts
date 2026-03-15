@@ -1,6 +1,6 @@
 package Level2.BankingSystem;
 
-Rpublic class CurrentAccount extends BaseAccount{
+public class CurrentAccount extends BaseAccount{
 
     public CurrentAccount(){
     }
